@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Oswald&display=swap');
+
+:root {
+    --primary-color: #325d7d;
+    --secondary-color: #f6c94a;
+    --accent1-color: #ff7f11;
+    --accent2-color: #d1d5db;
+
+    --heading-font: 'Oswald', sans-serif;
+    --paragraph-font: 'Lora', serif;
+
+    --nav-background-color: #d1d5db;
+    --nav-link-color: #325d7d;
+    --nav-hover-link-color: #d1d5db;
+    --nav--hover-background-color: #f6c94a;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p{
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+
+}
+
+.Sociallinks{
+    text-decoration: none;
+}
+
+.Sociallinks a img{
+    max-width: 20px;
+    margin-left: 15px; 
+    padding:4px;
+    margin:1rem;
+}
+
+.Sociallinks p{
+    text-align: center;
+    margin-right:10px;
+}
+
+.Ing img{
+    max-width: 400px;
+    
+}
+
+body{
+    max-width:1200px;
+    margin: 0 auto;
+ }
+
+.hero{
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width:90%;
+    height: auto;
+}
+
+.hero h1{
+    position: absolute;
+    top: 3%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: var(--accent2-color);
+    background: rgba(0, 0, 0, 0.8);
+    display: block;
+    padding:0.65rem;
+    opacity:0.7;
+    width:75%;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.hero article{
+    position : absolute;
+    top:6%;
+    left:45%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.8 );
+    padding: 20px;
+    color: var(--accent1-color);
+    width: 70%;
+
+}
+
+.hero article img{
+    max-width:200px;
+    float:right;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+
+
+section img{
+    size:60px;
+    width: 200px;
+    border:1px;
+    height:40px;
+
+}
+
+article img{
+    max-width:700px;
+    max-height: 205px;
+}
