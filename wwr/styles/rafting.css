@@ -14,6 +14,11 @@
     --nav-hover-link-color: #d1d5db;
     --nav--hover-background-color: #f6c94a;
 }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 h1,h2,h3,h4,h5,h6{
     font-family: var(--heading-font);
@@ -27,25 +32,59 @@ p{
 }
 
 .Sociallinks{
-    text-decoration: none;
-}
+    display:flex;
+    justify-content: flex-end;
+
+    /* transition: color 0.3s ease; */
+    
+} 
 
 .Sociallinks a img{
-    max-width: 20px;
-    margin-left: 15px; 
-    padding:4px;
-    margin:1rem;
-}
-
-.Sociallinks p{
-    text-align: center;
-    margin-right:10px;
-}
-
-.Ing img{
-    max-width: 400px;
+    width:30px;
+    margin-left: 10px;
+    
+    /* display: inline-block; */
+    
     
 }
+.footer{
+    text-align: center;
+    
+    background-color: #325d7d;
+}
+.ing {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding:10px;
+    max-width:90%;
+
+}
+
+.ings img{
+    width: 150px;
+    
+    border: 1px solid green;
+    padding: 2px;
+    
+    float: right;
+    margin: 0 0 1rem 1rem;
+    max-width: 90%;
+    
+
+    /* width:50%;
+    height:20%; */
+    
+}
+
+.ing h2{
+    top:10%;
+}
+
+.ings{
+
+    right: 20px;
+} 
 
 body{
     max-width:1200px;
@@ -61,7 +100,11 @@ body{
     width:90%;
     height: auto;
 }
-
+.header{
+    border-bottom: 1rem;
+    padding-bottom:10px;
+    
+}
 .hero h1{
     position: absolute;
     top: 3%;
@@ -78,6 +121,7 @@ body{
 
 nav a{
     text-decoration: none;
+    
 }
 
 .hero article{
@@ -108,8 +152,49 @@ section img{
     height:40px;
 
 }
+section h2{
+    right:20px;
+    text-align: center;
+}
 
 article img{
     max-width:700px;
     max-height: 205px;
 }
+
+.header, .nav{
+    display:flex;
+    gap: 100px;
+    max-width:1080px;
+    background-color: #325d7d;
+    flex-direction: row;
+    align-items:center;
+    padding:1rem;
+    
+}
+
+.logo{
+    padding:0.5rem;
+    
+}
+.logo img{
+    border-radius: 50%;
+}
+
+nav a{
+    display:block;
+    padding:0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight:500;
+    transition: color 0.3s ease;
+    border: 1px var(--secondary-color);
+    color:#ff7f11;    
+}
+
+
+figcaption{
+    margin-top:10px;
+    text-align: center;
+}
+
