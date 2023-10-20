@@ -50,10 +50,10 @@ p{
 }
 .footer{
     text-align: center;
-    
     background-color: #325d7d;
     max-width: 100%;
 }
+
 .ing {
     display:flex;
     flex-direction:row;
@@ -109,12 +109,13 @@ body{
 
 .hero{
     position: relative;
+    margin-top: 1rem;
 }
 
 .hero img {
-    display: block;
     width:100%;
     height: auto;
+    object-fit: cover;
 }
 .header{
     border-bottom: 1rem;
@@ -136,7 +137,7 @@ body{
     text-align: center;
 }
 
-nav a{
+.nav a{
     text-decoration: none;
     
 }
@@ -163,7 +164,7 @@ nav a{
 
 
 section img{
-    
+    size:60px;
     width: 200px;
     border:1px;
     height:40px;
@@ -217,142 +218,3 @@ figcaption{
     margin-top:10px;
     text-align: center;
 }
-address{
-    font-family: var(--paragraph-font);
-    padding:10px;
-}
-form{
-    width:600px;
-    margin: 0 auto;
-    padding:1rem;
-    border:1px solid rgba(0,0,0,0.3);
-    background-color: var(--accent1-color);
-    display:grid;
-}
-
-legend{
-    padding:0.5rem;
-    color:green;
-    font-size:1.3rem;    
-}
-.employee{
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
-    margin:20px 0;
-}
-.employee img{
-    width:250px;
-    height:250px;
-    border-radius:50%;
-    box-shadow: 0 0 0 10px rgba(0,0,0,0.6);
-}
-.employee p{
-    margin-top: 10px;
-    font-weight:bold;
-    text-align: center;
-}
-legend{
-    color:black;
-}
-fieldset{
-    display:grid;
-    grid-gap:0.5rem;
-    margin:1rem;
-    border:1px solid green;
-    padding:1rem;
-}
-.column1{
-    grid-template-columns:3fr 1fr;
-    margin: 0.5rem 0;
-}
-label{
-    text-align: right;
-}
-button{
-    margin:1rem;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border:none;
-    border-radius:0.5rem;
-    padding:0.75rem;
-    font-size:1.2rem;
-}
-button:hover{
-    background-color: rgb(11, 124, 11);
-
-}
-rrr.mar{
-    color: #f6c94a;
-    font-weight: 500;
-    border: 1px solid yellowgreen;
-    font-size: small;
-    border-radius: 30%;
-    opacity:0;
-    animation:fade-in 2s forwards;
-}
-.er{
-    padding:20px;
-}
-.tri img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.tri img{
-    width:100%;
-    height:100%;
-
-}
-.tr{
-    padding:10px;
-}
-table{
-    width:100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-th{
-    background-color:#f6c94a;
-    padding:12px;
-    text-align: left;
-    border-bottom: 2px solid teal;
-}
-td{
-    padding:10px;
-    text-align: left;
-    border-bottom:2px solid teal;
-}
-.newsletter{
-    background-color:#ff7f11;
-    padding:10px;
-    text-align: center;
-}
-.newsletter h2{
-    margin-bottom: 10px;
-}
-.newsletter form{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.newsletter input [type="text"]{
-    padding:10px;
-    margin:5px;
-    width:200px;
-    border:1px solid teal;
-    border-radius:5px;
-}
-.newsletter button{
-    padding: 10px 20px;
-    margin:5px;
-    background-color: purple;
-    color:crimson;
-    border:none;
-    border-radius: 5px;
-    cursor:pointer;
-}
-.newsletter button:hover{
-    background-color: green;
-}
-

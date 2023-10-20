@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Oswald&display=swap');
+
+:root {
+    --primary-color: #325d7d;
+    --secondary-color: #f6c94a;
+    --accent1-color: #ff7f11;
+    --accent2-color: #d1d5db;
+
+    --heading-font: 'Oswald', sans-serif;
+    --paragraph-font: 'Lora', serif;
+
+    --nav-background-color: #d1d5db;
+    --nav-link-color: #325d7d;
+    --nav-hover-link-color: #d1d5db;
+    --nav--hover-background-color: #f6c94a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--heading-font,--paragraph-font);
+    font-size: 1.2em;
+    color: var(--secondary-color);
+    background: var(--accent1-color);
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+    font-family: var(--heading-font);
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 2em;
+    text-align: center;
+}
+
+form {
+    width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color:teal;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 1rem;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: #ff7f11;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: rgb(11, 124, 11);
+}
