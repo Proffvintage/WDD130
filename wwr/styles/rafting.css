@@ -6,8 +6,8 @@
     --accent1-color: #ff7f11;
     --accent2-color: #d1d5db;
 
-    --heading-font: 'Oswald', sans-serif;
-    --paragraph-font: 'Lora', serif;
+    --heading-font: 'Oswald', Sans-serif;
+    --paragraph-font: 'Lora', Serif;
 
     --nav-background-color: #d1d5db;
     --nav-link-color: #325d7d;
@@ -83,12 +83,14 @@ p{
 .ings img{
     width: 150px;
     height:150px;
-    border: 1px solid green;
+    border: 1px solid rgba(12, 12, 12, 01);
     padding: 2px;
     object-fit:cover;
     float: right;
     margin: 0 0 1rem 1rem;
     max-width: 100%;
+    border-radius:20%;
+    
     /* width:50%;
     height:20%; */ 
 }
@@ -226,6 +228,10 @@ form{
     margin: 0 auto;
     padding:1rem;
     border:1px solid rgba(0,0,0,0.3);
+    border-radius: 9%;
+    border: 1px solid rgba(12, 12, 12, 01);
+    box-shadow: 0 0 30px #112;
+    opacity: 0.7;
     background-color: var(--accent1-color);
     display:grid;
 }
@@ -235,6 +241,18 @@ legend{
     color:green;
     font-size:1.3rem;    
 }
+.y{
+    text-align: center;
+    align-items: center;
+    color:#325d7d;
+    font-style:italic;
+    font-weight:700;
+    border: 1px solid rgb(152, 145, 145);
+    box-shadow: 0 0 10px #112;
+    
+
+}
+
 .employee{
     display:flex;
     justify-content:space-around;
@@ -298,19 +316,41 @@ rrr.mar{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgba(12, 12, 12, 01);
+    box-shadow: 0 0 30px #112;
+    opacity: 0.7;
+    border-radius: 0.5em;
 }
 .tri img{
     width:100%;
-    height:100%;
+    height:70%;
+    border: 1px solid rgba(12, 12, 12, 01);
+    box-shadow: 0 0 30px #112;
+    opacity: 0.7;
+    border: 1px solid rgba(12, 12, 12, 01);
+    border-radius: 0.5em;
 
 }
 .tr{
     padding:10px;
+    text-align:center;
+}
+.er{
+    padding:10px;
+    text-align:center;
+}
+.er a{
+    color:#325d7d;
+    text-decoration: none;
+    font-style:italic;
+    font-weight: 700;
 }
 table{
     width:100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    border: 1px solid rgba(12, 12, 12, 01);
+    border-radius: 0.5em;
 }
 th{
     background-color:#f6c94a;
@@ -346,7 +386,7 @@ td{
 .newsletter button{
     padding: 10px 20px;
     margin:5px;
-    background-color: purple;
+    background-color:#325d7d;
     color:crimson;
     border:none;
     border-radius: 5px;
@@ -356,3 +396,47 @@ td{
     background-color: green;
 }
 
+.cta{
+    text-align:center;
+    padding: 50px 0;
+    background-color: #ff7f11;
+}
+.cta h2{
+    font-size:2em;
+    margin-bottom:20px;
+}
+.cta p{
+    font-size:1.2em;
+    border-bottom: 20px;
+    color: #325d7d;
+}
+.cta a{
+    font-size:1.2em;
+    text-decoration: none;
+    color:#325d7d;
+    font-weight: 800;
+    transition: #325d7d 0.3s;
+}
+.cta a:hover{
+    color:#325d7d;
+}
+.gri{
+    display:flex;
+    justify-content: space-around;
+    background-color: #ff7f11;
+}
+.gr{
+    flex: 1 1 320px;
+    margin:20px;
+    text-align: center;
+}
+.gr img{
+    width:auto;
+    height:auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.gr h3{
+    font-size:1.5em;
+    margin-bottom:10px;
+}
