@@ -15,7 +15,8 @@
     --nav--hover-background-color: #f6c94a;
 }
 *{
-    margin:0;
+    
+    margin:0 ;
     padding:0;
     box-sizing:border-box;
 }
@@ -53,6 +54,9 @@ p{
     
     background-color: #325d7d;
     max-width: 100%;
+}
+.footer p{
+    color: white;
 }
 .ing {
     display:flex;
@@ -104,10 +108,6 @@ p{
     right: 20px;
 } 
 
-body{
-    max-width:1200px;
-    margin: 0 auto;
- }
 
 .hero{
     position: relative;
@@ -124,6 +124,9 @@ body{
     max-width: 100%;
     
 }
+.nav{
+    max-width: 100%;
+}
 .hero h1{
     position: absolute;
     top: 3%;
@@ -134,7 +137,7 @@ body{
     display: block;
     padding:0.65rem;
     opacity:0.7;
-    width:75%;
+    width:100%;
     text-align: center;
 }
 
@@ -142,17 +145,23 @@ nav a{
     text-decoration: none;
     
 }
+.y{
+    color: #112;
+}
 
 .hero article{
     position : absolute;
     top:6%;
     left:45%;
     transform: translateX(-50%);
-    background-color: rgba(0,0,0,0.8 );
+    background-color:black;
     padding: 20px;
     color: var(--accent1-color);
     width: 70%;
-
+    opacity:0.7 ;
+}
+.hero article h3{
+    color: #d1d5db;
 }
 
 .hero article img{
@@ -183,13 +192,17 @@ article img{
 
 .header, .nav{
     display:flex;
-    gap: 100px;
-    max-width:100%;
+    gap: 200px;
+    justify-content: space-evenly;
+    max-width:auto;
     background-color: #325d7d;
     flex-direction: row;
     align-items:center;
     padding:1rem;
     
+}
+.header a{
+    color: white;
 }
 
 .logo{
@@ -231,7 +244,6 @@ form{
     border-radius: 9%;
     border: 1px solid rgba(12, 12, 12, 01);
     box-shadow: 0 0 30px #112;
-    opacity: 0.7;
     background-color: var(--accent1-color);
     display:grid;
 }
@@ -244,7 +256,7 @@ legend{
 .y{
     text-align: center;
     align-items: center;
-    color:#325d7d;
+    color:#112;
     font-style:italic;
     font-weight:700;
     border: 1px solid rgb(152, 145, 145);
@@ -269,6 +281,7 @@ legend{
     margin-top: 10px;
     font-weight:bold;
     text-align: center;
+    color: #112;
 }
 legend{
     color:black;
@@ -288,13 +301,18 @@ label{
     text-align: right;
 }
 button{
+    display: inline-block;
+    text-align: center;
     margin:1rem;
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: white;
     border:none;
     border-radius:0.5rem;
     padding:0.75rem;
     font-size:1.2rem;
+}
+.cta button a{
+    color:white;
 }
 button:hover{
     background-color: rgb(11, 124, 11);
@@ -326,7 +344,6 @@ rrr.mar{
     height:70%;
     border: 1px solid rgba(12, 12, 12, 01);
     box-shadow: 0 0 30px #112;
-    opacity: 0.7;
     border: 1px solid rgba(12, 12, 12, 01);
     border-radius: 0.5em;
 
@@ -340,10 +357,14 @@ rrr.mar{
     text-align:center;
 }
 .er a{
-    color:#325d7d;
+    color:blue;
     text-decoration: none;
     font-style:italic;
+    font-size: large;
     font-weight: 700;
+}
+.er h2,p{
+    color:black;
 }
 table{
     width:100%;
@@ -365,16 +386,18 @@ td{
 }
 .newsletter{
     background-color:#ff7f11;
-    padding:10px;
+    padding:50px 0;
     text-align: center;
 }
 .newsletter h2{
     margin-bottom: 10px;
+    color: #112;
 }
 .newsletter form{
     display:flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
 }
 .newsletter input [type="text"]{
     padding:10px;
@@ -382,15 +405,19 @@ td{
     width:200px;
     border:1px solid teal;
     border-radius:5px;
+    font-size: 16px;
 }
 .newsletter button{
     padding: 10px 20px;
     margin:5px;
     background-color:#325d7d;
-    color:crimson;
+    color:white;
     border:none;
     border-radius: 5px;
     cursor:pointer;
+}
+.gr h3{
+    color: #112;
 }
 .newsletter button:hover{
     background-color: green;
@@ -404,25 +431,27 @@ td{
 .cta h2{
     font-size:2em;
     margin-bottom:20px;
+    color: #112;
 }
 .cta p{
     font-size:1.2em;
     border-bottom: 20px;
-    color: #325d7d;
+    color:black;
 }
 .cta a{
     font-size:1.2em;
     text-decoration: none;
-    color:#325d7d;
+    color:#112;
     font-weight: 800;
-    
 }
 .cta a:hover{
     color:#325d7d;
 }
 .gri{
-    display:flex;
-    justify-content: space-around;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap:50px;
+    padding:20px;
     background-color: #ff7f11;
 }
 .gr{
@@ -432,11 +461,33 @@ td{
 }
 .gr img{
     width:auto;
-    height:auto;
+    height:70%;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 .gr h3{
     font-size:1.5em;
     margin-bottom:10px;
+}
+.main{
+    background-color: whitesmoke;
+}
+.button{
+    display:inline-block;
+    text-align: center;
+    background-color: #325d7d;
+    color:white;
+    padding:16px;
+    font-size:16px;
+    margin-top:10px;
+    border-radius:5px;
+}
+.button:hover {
+    background-color:green;
+}
+.cta a{
+    color:white;
+}
+.body{
+    background-color: whitesmoke;
 }
